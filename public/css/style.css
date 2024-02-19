@@ -1,48 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: rgb(68, 110, 110);
+}
+main h1{
+    text-align: center;
+    margin-top: 80px;
 }
 nav ul{
     display: flex;
     justify-content: center;
-    background-color: rgb(17, 55, 41);
 }
-nav ul li{
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(17, 55, 41);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
     list-style-type: none;
     padding: 17px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: rgb(236, 232, 232);
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
+
+h1 {
     text-align: center;
     color: black;
     margin-top: 20px;
 }
-form{
+
+form {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 18px;
 }
-form input{
+
+form input {
     width: 210px;
     padding: 10px 10px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
-form button{
-    padding:10px 25px;
+
+form button {
+    padding: 10px 25px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
-main ul li{
+
+main ul li {
     list-style-type: none;
     padding: 13px 17px;
     background-color: white;
@@ -50,10 +70,16 @@ main ul li{
     margin: 10px auto;
     border-radius: 5px;
 }
+
+main p {
+    text-align: center;
+    margin-top: 20px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
-    padding: 15px 0px;
+    padding: 18px 0px;
     width: 100%;
     background-color: rgb(17, 55, 41);
     text-align: center;
