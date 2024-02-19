@@ -23,11 +23,38 @@
             <button type="submit">Save</button>
         </form>
         <ul>
-            <%if(programs.length>0){%>
-            <li><%=programs%></li>
-            <%}else{%>
-                <p>No Data Found</p>
-            <%}%>
+            <% if (programs.length> 0) { %>
+                <!-- //forEach -->
+                <!-- <%programs.forEach((program)=>{%>
+            <li><%=program%></li>
+        <%})%> -->
+
+                <!-- map -->
+                <!-- <%programs.map((program)=>{%>
+            <li><%=program%></li>
+        <%})%> -->
+
+                <!-- forLoop -->
+                <!-- <%for(let x=0;x<programs.length;x++){%>
+            <li><%=programs[x]%></li>
+        <%}%> -->
+
+                <!-- for in -->
+                <!-- <%for(let x in programs){%>
+            <li><%=programs[x]%></li>
+        <%}%> -->
+
+                <!-- for of -->
+                <%for(let x of programs){%>
+                    <li>
+                        <%=x%>
+                    </li>
+                    <%}%>
+
+                        <% } else { %>
+                            <p>No Data Found</p>
+                            <% } %>
+
         </ul>
     </main>
     <footer>
