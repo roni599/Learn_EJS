@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const chalk=require('chalk');
 const PORT = 3000;
 const hostName = '127.0.0.1';
 
@@ -21,5 +22,5 @@ app.post('/', (req, res) => {
     res.redirect('/');
 })
 app.listen(PORT, hostName, () => {
-    console.log(`Server is running at http://${hostName}:${PORT}`);
+    console.log(chalk.blue.bgRed.bold(`Server is running at http://${hostName}:${PORT}`));
 });
