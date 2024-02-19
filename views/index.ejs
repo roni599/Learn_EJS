@@ -23,9 +23,11 @@
             <button type="submit">Save</button>
         </form>
         <ul>
-            <li>
-                <%=programs%>
-            </li>
+            <%if(programs.length>0){%>
+            <li><%=programs%></li>
+            <%}else{%>
+                <p>No Data Found</p>
+            <%}%>
         </ul>
     </main>
     <footer>
