@@ -50,11 +50,13 @@ main ul li{
     margin: 10px auto;
     border-radius: 5px;
 }
-footer p{
-    margin-top: 281px;
-    text-align: center;
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 15px 0px;
+    width: 100%;
     background-color: rgb(17, 55, 41);
-    padding: 16px 0px;
-    color: white;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
